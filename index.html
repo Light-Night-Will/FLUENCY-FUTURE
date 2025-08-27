@@ -20,11 +20,11 @@
         <img src="./Images/fluency-logo.svg" alt="Logo Fluency Academy">
       </div>
       <div class="main-header__right">
-        <a href="">Abrir modal</a>
+        <a href="" onclick="openModal('modal'); return false">Abrir modal</a>
       </div>
     </div>
   </header>
-  <div class="full-center-center">
+  <div class="full-center-center full-center-center--margin-top">
     <div class="box box-avatar">
       <div class="box__avatar">
         <img src="./images/avatar.svg" alt="Avatar Image - Fluency Logo">
@@ -155,6 +155,25 @@
       </details>      
     </div>
   </div>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" onclick="closeModal('modal')"></div>
+
+    <div class="modal__content">
+        <div class="modal__content__header">
+            <h2>Olá! Eu sou o componente modal</h2>
+        </div>
+
+        <div class="modal__content__body">
+            <p>
+                Os modais concentram a atenção do usuário exclusivamente em uma tarefa ou informação por meio de uma janela que fica no topo do conteúdo da página. Busque-se objetivo e claro na informação.
+            </p>
+        </div>
+        <div class="modal__content__footer">
+            <button onclick="closeModal('modal')">Fechar modal</button>
+        </div>
+    </div>
+</div>
 
   <script src="./scripts/view-more.js"></script>
 </body>

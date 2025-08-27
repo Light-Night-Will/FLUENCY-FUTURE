@@ -29,6 +29,15 @@ html * {
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    z-index: 1000;
+  }
+
+  .main-header__right a {
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 100%;
+    text-decoration: none;
   }
   
   .full-center-center {
@@ -38,9 +47,9 @@ html * {
     align-items: center;
     justify-content: center;
   }
-  
-  .full-center-center:first-child {
-    margin-top: 200px;
+
+  .full-center-center--margin-top {
+    margin-top: 207px;
   }
   
   .box {
